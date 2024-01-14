@@ -9,7 +9,7 @@ function onFormSubmit(e){
     }
     resetForm();
     }
-// Read operation using this function
+
 function readFormData(){
     var formData = {};
     formData["Name"] = document.getElementById("Name").value;
@@ -19,7 +19,7 @@ function readFormData(){
     return formData;
 }
 
-// Create operation
+
 function insertNewRecord(data){
     var table = document.getElementById("People List").getElementsByTagName('tbody')[0];
      var newRow = table.insertRow(table.length);
@@ -36,7 +36,7 @@ function insertNewRecord(data){
                         <a href="#" onClick='onDelete(this)'>Delete</a>`;
 }
 
-// To Reset the data of fill input
+
 function resetForm(){
     document.getElementById('Name').value = '';
     document.getElementById('Theid').value = '';
@@ -45,7 +45,7 @@ function resetForm(){
     selectedRow = null;
 }
 
-// For Edit operation
+
 function onEdit(td){
     selectedRow = td.parentElement.parentElement;
     document.getElementById('Name').value = selectedRow.cells[0].innerHTML;
