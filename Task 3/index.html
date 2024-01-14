@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crud operation in javascript</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: green;">
+    <table>
+        <tr>
+            <td>
+                
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="Name">Name</label>
+                        <input type="text" name="Name" id="Name" >
+                    </div>
+                    <div>
+                        <label for=" Theid">The id</label>
+                        <input type="text" name="Theid" id="Theid" >
+                    </div>
+                    <div>
+                        <label for="assignee">assignee</label>
+                        <input type="text" name="assignee" id="assignee">
+                    </div>
+                    <div>
+                        <label for="Project">Project</label>
+                        <input type="text" name="Project" id="Project">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="People List">
+                    <thead>
+                        <tr>
+                            <th>Enter the details</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
